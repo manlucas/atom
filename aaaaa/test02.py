@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+
+if __name__ == '__main__':
+    a = u'\u5f53\u524d\u4e91\u533a\u57df\u6ca1\u6709\u53ef\u7528\u7684'
+    # PROXY\uff0c\u8bf7\u5148\u68c0\u67e5\u5e76\u5b89\u88c5', u'\u76f4\u8fde\u533a\u57df\uff0c\u4e0d\u80fd\u5b89\u88c5PROXY\u548cPAGENT'
+
+    print(a)

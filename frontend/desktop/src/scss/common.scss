@@ -1,0 +1,115 @@
+.common-section-title {
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 10px;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666666;
+    &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: -2px;
+        left: 0;
+        width: 2px;
+        height: 20px;
+        background: #a3c5fd;
+    }
+}
+
+.common-form-item {
+    margin-bottom: 20px;
+    @include clearfix;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &>label {
+        position: relative;
+        float: left;
+        margin-top: 6px;
+        width: 100px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #666666;
+        text-align: right;
+        &.required:after {
+            content: '*';
+            position: absolute;
+            top: 0px;
+            right: -10px;
+            color: #ff2602;
+            font-family: "SimSun";
+        }
+    }
+    .common-form-content {
+        margin-left: 120px;
+        min-height: 36px;
+    }
+}
+
+.common-dialog .bk-dialog {
+    .bk-dialog-tool {
+        min-height: 20px;
+    }
+    .bk-dialog-header {
+        padding: 16px 20px 16px;
+        border-bottom: 1px solid #ebebeb;
+        .bk-dialog-header-inner {
+            font-size: 20px;
+        }
+    }
+    .bk-dialog-body {
+        padding: 0;
+    }
+}
+
+.common-error-tip {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    color: #ff5757;
+}
+
+.common-warning-tip {
+    display: inline-block;
+    font-size: 14px;
+    color: #ffb400;
+}
+
+.panagation {
+    padding: 10px 20px;
+    text-align: right;
+    border: 1px solid #dde4eb;
+    border-top: none;
+    background: #ffffff;
+    overflow: hidden;
+    .page-info {
+        float: left;
+        line-height: 36px;
+        font-size: 12px;
+    }
+}
+// 无权限按钮统一样式
+.btn-permission-disable {
+    background-color: #fafafa !important;
+    border-color: #e6e6e6 !important;
+    color: #cccccc !important;
+    cursor: pointer !important;
+}
+// 无权限文本统一样式
+.text-permission-disable {
+    color: #cccccc !important;
+    cursor: pointer !important;
+}
+
+.cursor-element {
+    width: 12px;
+    height: 16px;
+    background: url('~@/assets/images/lock.svg') no-repeat;
+}
+
+.bk-select-inline {
+    display: inline-block;
+    width: 260px;
+}
